@@ -1,0 +1,9 @@
+{
+	"messages": [
+		"Hey, {lime}{PLAYERNAME}{default}, welcome to {lime}SERVER NAME{default}.",
+		"Before playing please make sure to read our rules by typing {lime}!rules {default}in the chat!",
+		"Don't forget to join our Discord server: {lime}discord.gg/server{default}.",
+		"Have Fun! ^^"
+	],
+	"prefix": "[{lime}Swiftly{default}]"
+}
