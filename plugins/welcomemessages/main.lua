@@ -17,6 +17,7 @@ AddEventHandler("OnPlayerTeam", function(event)
     if oldteam == Team.None then 
         for i=1,#messages do
             local msg = messages[i]
+            if not player:CBasePlayerController():IsValid() then return end
             msg = msg:gsub("{PLAYERNAME}", player:CBasePlayerController().PlayerName):gsub("{PLAYERS}", tostring(playermanager:GetPlayerCount())):gsub("{MAXPLAYERS}", tostring(server:GetMaxPlayers())):gsub("{MAP}", server:GetMap())
 
             player:SendMsg(MessageType.Chat, string.format("%s %s", config:Fetch("welcomemessages.prefix"), msg))
